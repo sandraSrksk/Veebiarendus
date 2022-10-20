@@ -1,8 +1,16 @@
 # Veebiarendus
 ## Linux Google Cloud Shell
 Enne kasutamist käsud:
-- updates: sudo apt-get update && sudo apt-get upgrade
+- updates: sudo apt-get update &
 - sudo apt-get install netcat-openbsd tcpdump traceroute mtr
+## Harjutus 1 Käsud:
+- ip addr show eth0
+sarascono@cloudshell:~ (inductive-mind-307619)$ ip addr show eth0
+10: eth0@if11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
+    link/ether 02:42:ac:11:00:04 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.17.0.4/16 brd 172.17.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+-        
 ## harjutus 
 sisesta ping -c3 8.8.8.8 
 ja output: 3 packets transmitted, 3 received, 0% packet 
